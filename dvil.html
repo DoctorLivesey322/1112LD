@@ -1,0 +1,33 @@
+<html lang = "lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="autorius" content="Eduard Petkevič, Ef-22/2">
+    <meta name="Description" content="Tai yra mano HTML dokumento praktika">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Laborai</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+    
+
+</head>
+<body>
+    <div class="container">
+        <form id="myForm">
+          <label for="firstName">Vardas:</label>
+          <input type="text" id="firstName" name="firstName" required>
+    
+          <label for="lastName">Pavardė:</label>
+          <input type="text" id="lastName" name="lastName" required>
+    
+          <label for="birthDate">Gimimo data (YYYY-MM-DD):</label>
+          <input type="text" id="birthDate" name="birthDate" required pattern="\d{4}-\d{2}-\d{2}">
+    
+          <button type="button" onclick="calculateDays()">Apskaičiuoti</button>
+        </form>
+        <div id="inputs"></div>
+        <div id="result"></div>
+      </div>
+    
+      <script src="script.js"></script>
+    </body>
+    </html>
